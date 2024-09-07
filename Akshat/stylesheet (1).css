@@ -1,0 +1,452 @@
+*
+{
+    margin:0;
+    pdding:0;
+    box-sizing: border-box;
+    font-family:'popins', sans-serif;
+
+}
+body
+{
+    color: #ededed;
+    background: #081b29;
+
+}
+.header
+{
+    position :fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px 10%;
+    background :#051129;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity: 0;
+    animation: slideRight is ease forwards;
+
+}
+.navbar a {
+    display: inline-block;
+    font-size: 25px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slidetop .5s ease forwards;
+}
+.navbar a:hover{
+    color:#0ef;
+
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(https://wallpapers.com/images/hd/cool-devil-hacker-wcwuf1bxuqwyuf5k.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 600px;
+
+}
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+}
+.home-content h3 span {
+    color:#0ef
+}
+.home-content h1 span {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity: 0;
+    animation: slideRight is ease forwards;
+    animation-delay: 1s;
+    
+    
+}
+.home-content p {
+    font-size: 20px;
+    opacity: 0;
+    animation:slideleft 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background:transparent;
+    border:2px solid #0ef;
+    border-radius: 50px;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(-2s * var(--i));
+
+    margin: 30px 15px 30px 0;
+
+}
+.home-sci a:hover{
+    background:#0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan,0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap:1 5rem;
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 800px;
+    height: auto;
+    width:100%;
+    border-radius: 8px;
+}
+.about-text h2{
+    font-size: 80px;
+}
+.about-text h2 span {
+    color:#0ef;
+}
+.about-text h4{
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin:15px 0 30px;
+
+}
+.about-text p{
+    color:aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,ifr));
+    grid-gap:40px;
+    margin-top:50px;
+}
+.services-list div{
+    background-color: transparent;
+    padding:40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right:10px;
+    border-radius: 20px;
+    transition:background 0.5s,transform 0.5s;
+    box-shadow:1px 1px 20px #012290f7,
+1px 1px 40px #0053b8f7   
+}
+.services-list div i {
+    font-size:20px;
+    margin-bottom:30px;
+    .services-list div h2 {
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    .services-list div a {
+        text-decoration: none;
+        color: #000; 
+        font-size: 12px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .read {
+        display: inline-block;
+        padding: 12px 28px;
+        background: #0ef;
+        border-radius: 40px;
+        font-size: 16px;
+        color: #081b29;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-weight: 600;
+        opacity: 0;
+        animation: slideTop ease forwards;
+        animation-delay: 2s;
+        box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+    }
+    
+    @keyframes slideTop {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+
+    .read:hover {
+        box-shadow: 0 0 0 0 cyan,
+                    0 0 25px cyan,
+                    0 0 50px cyan,
+                    0 0 100px cyan,
+                    0 0 200px cyan;
+    }
+    
+    .some-class {
+       
+    }
+    
+
+    }
+    
+    .services-list div:hover {
+        transform: translateY(-10px);
+    }
+    
+
+
+@keyframes slightRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slightLeft {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(100px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+
+
+    }
+}
+    @keyframes slideleft {
+        0%{
+            transform: translateX(100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+    
+    
+        }
+    
+}
+@keyframes  slidetop{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+
+
+    }
+}
+@keyframes  slideBottom{
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+
+
+    }
+}
+.skill-bar {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.skill-bar .skill {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill-bar .skill-name {
+    font-size: 14px;
+}
+
+.skill-bar .percentage {
+    font-size: 14px;
+}
+
+.skill-bar .bar {
+    position: relative;
+    height: 10px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-bar .progress {
+    height: 100%;
+    background-color: #00d8ff;
+    border-radius: 10px;
+}
+
+.skill-bar .progress.html {
+    width: 90%;
+}
+
+.skill-bar .progress.css {
+    width: 60%;
+}
+
+.skill-bar .progress.js {
+    width: 85%;
+}
+
+.skill-bar .progress.react {
+    width: 75%;
+}
+
+.progress-circle {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: conic-gradient(#00d8ff calc(var(--percent) * 1%), #0f0f0f calc(var(--percent) * 1%));
+}
+
+.circle::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    background-color: #0f0f0f;
+    border-radius: 50%;
+}
+
+.circle .number {
+    position: relative;
+    font-size: 20px;
+    color: #00d8ff;
+}
+
+.circle.creativity {
+    --percent: 90;
+}
+
+.circle.communication {
+    --percent: 65;
+}
+
+.circle.problem-solving {
+    --percent: 75;
+}
+
+.circle.teamwork {
+    --percent: 85;
+}
